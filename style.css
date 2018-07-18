@@ -72,12 +72,16 @@
 .heading__middle {
     font-size: 1.2rem;
 
-    border-bottom: 1px dashed var(--accent-color);
+
     padding-bottom: 5px;
 }
 
 .heading__small {
     font-size: 1rem;
+}
+
+.heading__dashed {
+    border-bottom: 1px dashed var(--accent-color);
 }
 
 .text {
@@ -109,5 +113,9 @@
 @media print {
     :root {
         font-size: var(--font-size-print);
+    }
+
+    .navlink {
+        display: none;
     }
 }
