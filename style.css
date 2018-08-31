@@ -84,6 +84,19 @@
     border-bottom: 1px dashed var(--accent-color);
 }
 
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.portfolio__item {
+    padding-bottom: 20px;
+}
+
 .text {
     margin: 0;
     padding: 0;
