@@ -2,7 +2,7 @@
   --main-color: #000000;
   --accent-color: #636363;
   --button-color: #32425c;
-  --button-color-bg: #f1f8ff;
+  --button-color-bg: #ffffff;
   --button-color-demo: #63a63e;
   --button-color-demo-bg: #f6feeb;
   --font-size-large: 26px;
@@ -89,6 +89,7 @@
 
 .portfolio__item {
   padding-bottom: 20px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -154,7 +155,7 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   :root {
     font-size: var(--font-size-small);
   }
@@ -162,6 +163,15 @@
   .page {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .portfolio__item {
+    margin-right: 0;
+  }
+
+  .portfolio__thumbnail {
+    width: 100%;
+    height: auto;
   }
 }
 
