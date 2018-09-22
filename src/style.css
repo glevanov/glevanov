@@ -1,7 +1,10 @@
 :root {
   --main-color: #000000;
   --accent-color: #636363;
-  --button-color: #2b629c;
+  --button-color: #32425c;
+  --button-color-bg: #f1f8ff;
+  --button-color-demo: #63a63e;
+  --button-color-demo-bg: #f6feeb;
   --font-size-large: 26px;
   --font-size-regular: 20px;
   --font-size-small: 16px;
@@ -103,9 +106,10 @@
   margin-bottom: 10px;
 
   color: var(--button-color);
-  background-color: #ffffff;
+  background-color: var(--button-color-bg);
   border: 1px solid var(--button-color);
   border-radius: 8px;
+  outline: none;
 
   text-align: center;
   text-transform: uppercase;
@@ -113,9 +117,29 @@
   font-weight: bold;
 }
 
+.portfolio__button:hover,
+.portfolio__button:focus {
+  color: var(--button-color-bg);
+  background-color: var(--button-color);
+  box-shadow: 0 0 15px var(--button-color);
+}
+
+.portfolio__button_theme_demo {
+  color: var(--button-color-demo);
+  background-color: var(--button-color-demo-bg);
+  border: 1px solid var(--button-color-demo);
+}
+
+.portfolio__button_theme_demo:hover,
+.portfolio__button_theme_demo:focus {
+  color: var(--button-color-demo-bg);
+  background-color: var(--button-color-demo);
+  box-shadow: 0 0 15px var(--button-color-demo);
+}
+
 .portfolio__thumbnail {
   margin-bottom: 25px;
-  box-shadow: 10px 10px 25px 0 rgba(0,0,0,0.24);
+  box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.24);
 }
 
 .portfolio__date {
