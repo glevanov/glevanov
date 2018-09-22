@@ -4,6 +4,7 @@
   --button-color: #32425c;
   --button-color-bg: #ffffff;
   --button-color-demo: #63a63e;
+  --button-color-demo-accent: #ff964a;
   --button-color-demo-bg: #f6feeb;
   --font-size-large: 26px;
   --font-size-regular: 20px;
@@ -129,6 +130,21 @@
   color: var(--button-color-demo);
   background-color: var(--button-color-demo-bg);
   border: 1px solid var(--button-color-demo);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__button_theme_demo::before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-right: -5px;
+  border: 9px solid transparent;
+  border-left: 14px solid var(--button-color-demo-accent);
 }
 
 .portfolio__button_theme_demo:hover,
