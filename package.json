@@ -21,6 +21,7 @@
     "gulp": "^3.x",
     "gulp-autoprefixer": "^6.x",
     "gulp-concat": "^2.x",
-    "gulp-csso": "^3.x"
+    "gulp-csso": "^3.x",
+    "prettier": "1.14.3"
   }
 }
