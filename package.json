@@ -1,17 +1,16 @@
 {
   "name": "glevanov.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
   "scripts": {
-    "test": ""
+    "start": "gulp dev",
+    "styles": "gulp styles"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/glevanov/glevanov.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Grigoriy Levanov",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/glevanov/glevanov.github.io/issues"
   },
