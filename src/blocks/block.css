@@ -1,0 +1,14 @@
+.block {
+  margin-bottom: 15px;
+}
+
+.block__duration {
+  font-style: italic;
+
+  color: var(--accent-color);
+}
+
+.block__job-tile {
+  font-weight: 600;
+  color: var(--accent-color);
+}

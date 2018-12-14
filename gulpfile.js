@@ -1,13 +1,15 @@
 const gulp = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
-const csso = require("gulp-csso");
+const cssnano = require('gulp-cssnano');
+const concatCss = require('gulp-concat-css');
 
 gulp.task("styles", function() {
   return gulp
     .src("./src/style.css")
-    .pipe(autoprefixer())
-    .pipe(csso())
+    .pipe(concatCss("./style.css"))
+    .pipe(autoprefixer({browsers: [`last 2 version`]}))
+    .pipe(cssnano())
     .pipe(gulp.dest("./"))
     .pipe(
       browserSync.reload({
@@ -22,7 +24,7 @@ gulp.task("browserSync", function() {
     }
   });
 });
-gulp.task("dev", gulp.series("browserSync", function() {
-  gulp.watch("./src/style.css", ["styles"]);
-  gulp.watch("./*.html", browserSync.reload);
+gulp.task("dev", gulp.series("styles", "browserSync", function() {
+  gulp.watch("./**/*.css", "styles");
+  gulp.watch("./**/*.html", gulp.series("styles", browserSync.reload));
 }));
