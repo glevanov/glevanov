@@ -44,13 +44,13 @@
   margin-bottom: 15px;
 }
 
-.block_duration {
+.block__duration {
   font-style: italic;
 
   color: var(--accent-color);
 }
 
-.block_job-tile {
+.block__job-tile {
   font-weight: 600;
   color: var(--accent-color);
 }
@@ -61,21 +61,21 @@
   font-weight: 600;
 }
 
-.heading__large {
+.heading--large {
   font-size: 2rem;
 }
 
-.heading__middle {
+.heading--middle {
   font-size: 1.2rem;
 
   padding-bottom: 5px;
 }
 
-.heading__small {
+.heading--small {
   font-size: 1rem;
 }
 
-.heading__dashed {
+.heading--dashed {
   border-bottom: 1px dashed var(--accent-color);
 }
 
@@ -128,7 +128,7 @@
   box-shadow: 0 0 15px var(--button-color);
 }
 
-.portfolio__button_theme_demo {
+.portfolio__button--demo {
   color: var(--button-color-demo);
   background-color: var(--button-color-demo-bg);
   border: 1px solid var(--button-color-demo);
@@ -138,7 +138,7 @@
   align-items: center;
 }
 
-.portfolio__button_theme_demo::before {
+.portfolio__button--demo::before {
   display: block;
   position: relative;
   content: "";
@@ -149,8 +149,8 @@
   border-left: 14px solid var(--button-color-demo-accent);
 }
 
-.portfolio__button_theme_demo:hover,
-.portfolio__button_theme_demo:focus {
+.portfolio__button--demo:hover,
+.portfolio__button--demo:focus {
   color: var(--button-color-demo-bg);
   background-color: var(--button-color-demo);
   box-shadow: 0 0 15px var(--button-color-demo);
