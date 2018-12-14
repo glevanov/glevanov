@@ -22,7 +22,7 @@ gulp.task("browserSync", function() {
     }
   });
 });
-gulp.task("dev", ["browserSync"], function() {
+gulp.task("dev", gulp.series("browserSync", function() {
   gulp.watch("./src/style.css", ["styles"]);
   gulp.watch("./*.html", browserSync.reload);
-});
+}));
