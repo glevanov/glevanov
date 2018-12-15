@@ -11,4 +11,8 @@
   a:visited {
     color: var(--main-color);
   }
+
+  .header {
+    max-width: unset;
+  }
 }
