@@ -21,7 +21,20 @@
   width: 100%;
   height: auto;
 
-  outline: 1px solid rgba(0,0,0,0.3);
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.portfolio__link:focus .portfolio__thumbnail {
+  outline: 3px solid var(--button-color-demo-accent);
+}
+
+.portfolio__link:hover .portfolio__thumbnail {
+  opacity: 0.85;
+}
+
+.portfolio__link:focus,
+.portfolio__link:hover {
+  outline: none;
 }
 
 .portfolio__date {
