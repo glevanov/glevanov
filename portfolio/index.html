@@ -95,7 +95,10 @@
     <li class="portfolio__item">
       <h3 class="heading heading--middle">Техномарт</h3>
       <p class="portfolio__date">Март 2018</p>
-      <img class="portfolio__thumbnail" src="../img/preview_technomart.jpg" alt="Техномарт">
+      <picture>
+        <source srcset="../img/technomart@1x.webp 1x, ../img/technomart@2x.webp 2x">
+        <img class="portfolio__thumbnail" src="../img/technomart@1x.jpg" srcset="../img/technomart@2x.jpg 2x" alt="Техномарт">
+      </picture>
       <div class="button_wrap">
         <a class="button button--demo" href="630209-technomart/index.html" target="_blank">демо</a>
         <a class="button" href="https://github.com/glevanov/630209-technomart" target="_blank">github</a>
