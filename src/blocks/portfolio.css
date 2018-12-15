@@ -21,7 +21,7 @@
   width: 100%;
   height: auto;
 
-  outline: 1px solid black;
+  outline: 1px solid rgba(0,0,0,0.3);
 }
 
 .portfolio__date {
