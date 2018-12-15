@@ -29,7 +29,7 @@
 }
 
 .portfolio__link:hover .portfolio__thumbnail {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .portfolio__link:focus,
