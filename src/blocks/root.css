@@ -1,12 +1,10 @@
 :root {
   --main-color: #000000;
   --material-color-main: #133fb6;
+  --material-color-complementary: #b68b13;
   --material-color-accent: #b6133f;
   --accent-color: #636363;
-  --button-color: var(--material-color-main);
   --button-color-bg: #ffffff;
-  --button-color-demo: var(--material-color-main);
-  --button-color-demo-accent: var(--material-color-accent);
   --button-color-demo-bg: #ffffff;
   --font-size-large: 26px;
   --font-size-regular: 20px;

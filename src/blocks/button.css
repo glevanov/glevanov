@@ -4,9 +4,9 @@
   padding-top: 7px;
   padding-bottom: 7px;
 
-  color: var(--button-color);
+  color: var(--material-color-main);
   background-color: var(--button-color-bg);
-  border: 1px solid var(--button-color);
+  border: 1px solid var(--material-color-main);
   border-radius: 5px;
   outline: none;
 
@@ -30,13 +30,13 @@
 .button:hover,
 .button:focus {
   color: var(--button-color-bg);
-  background-color: var(--button-color);
+  background-color: var(--material-color-main);
 }
 
 .button--demo {
-  color: var(--button-color-demo);
+  color: var(--material-color-main);
   background-color: var(--button-color-demo-bg);
-  border: 1px solid var(--button-color-demo);
+  border: 1px solid var(--material-color-main);
   position: relative;
   display: flex;
   justify-content: center;
@@ -51,11 +51,11 @@
   height: 0;
   margin-right: -5px;
   border: 9px solid transparent;
-  border-left: 14px solid var(--button-color-demo-accent);
+  border-left: 14px solid var(--material-color-accent);
 }
 
 .button--demo:hover,
 .button--demo:focus {
   color: var(--button-color-demo-bg);
-  background-color: var(--button-color-demo);
+  background-color: var(--material-color-main);
 }

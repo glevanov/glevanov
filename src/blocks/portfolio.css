@@ -25,7 +25,7 @@
 }
 
 .portfolio__link:focus .portfolio__thumbnail {
-  outline: 3px solid var(--button-color-demo-accent);
+  outline: 3px solid var(--material-color-complementary);
 }
 
 .portfolio__link:hover .portfolio__thumbnail {

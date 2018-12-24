@@ -8,3 +8,7 @@
 .link:focus {
   color: var(--material-color-accent);
 }
+
+.link:focus {
+  outline: 2px solid var(--material-color-complementary);
+}
