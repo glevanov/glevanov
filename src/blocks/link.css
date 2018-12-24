@@ -1,0 +1,10 @@
+.link,
+.link:visited {
+  color: var(--material-color-main);
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+  color: var(--material-color-accent);
+}

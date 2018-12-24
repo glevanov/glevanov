@@ -6,19 +6,16 @@
 
 .heading--large {
   font-size: 2rem;
-  line-height: calc(2rem * 1.5);
+  line-height: 2.4rem;;
 }
 
 .heading--middle {
   font-size: 1.2rem;
-  line-height: calc(1.2rem * 1.5);
+  line-height: 2rem;
 }
 
 .heading--small {
   font-size: 1rem;
-  line-height: calc(1rem * 1.5);
-}
-
-.heading--dashed {
-  border-bottom: 1px dashed var(--accent-color);
+  line-height: 1.6rem;
+  margin-top: 5px;
 }
