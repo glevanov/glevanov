@@ -31,6 +31,7 @@
 .button:focus {
   color: var(--button-color-bg);
   background-color: var(--material-color-main);
+  transition: all 0.5s ease-in-out;
 }
 
 .button--demo {

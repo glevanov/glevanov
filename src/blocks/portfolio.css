@@ -30,6 +30,7 @@
 
 .portfolio__link:hover .portfolio__thumbnail {
   opacity: 0.9;
+  transition: all 0.5s ease-in-out;
 }
 
 .portfolio__link:focus,
