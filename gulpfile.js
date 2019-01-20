@@ -25,6 +25,6 @@ gulp.task("browserSync", function() {
   });
 });
 gulp.task("dev", gulp.series("styles", "browserSync", function() {
-  gulp.watch("./**/*.css", "styles");
-  gulp.watch("./**/*.html", gulp.series("styles", browserSync.reload));
+  gulp.watch("src/**/*.css", "styles");
+  gulp.watch("**/*.html", gulp.series("styles", browserSync.reload));
 }));
